@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MyButton from './MyButton';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <p>
           Hello World! as we always start with a hello.
         </p>
+        <MyButton/>
       </header>
     </div>
   );
