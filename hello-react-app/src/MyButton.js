@@ -6,11 +6,17 @@ After defining MyButton function component here, we are using it in App.js and f
 App.js as below :
 
 import MyButton from './MyButton';
+
+Props
+In the definition of MyButton below in the brackets we have `props`. This `props` says here that this React component
+accepts a single `props` which actually stands for properties.
+So in a nutshell :
+Props are arguments passed into React components. 
 */
 
-function MyButton() {
+function MyButton(props) {
   return (
-    <button>My Button</button>
+    <button>My Button : {props.name}</button>
   );
 }
 

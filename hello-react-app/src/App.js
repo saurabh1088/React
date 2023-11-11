@@ -21,7 +21,7 @@ function App() {
         <p>
           Hello World! as we always start with a hello.
         </p>
-        <MyButton/>
+        <MyButton name="Batman"/>
       </header>
     </div>
   );
