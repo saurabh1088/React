@@ -1,3 +1,13 @@
+/*
+tsconfig.json
+
+tsconfig.json file is configuration file used in TypeScript projects. When TypeScript compiler runs then it looks for
+`tsconfig.json` file.
+
+tsconfig.json file provides :
+- compiler options
+- settings
+*/
 {
   "compilerOptions": {
     "target": "ES2020",
