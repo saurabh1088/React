@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import DailyHabit from './components/DailyHabit'
+import DailyHabitWithProps from './components/DailyHabit'
+import DailyHabitWithObjectDestructuring from './components/DailyHabit'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,7 +30,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <DailyHabit/>
+      <DailyHabitWithProps title='1. Daily Habit' description='One must have some good daily habits'/>
+      <DailyHabitWithObjectDestructuring title={'2. Daily Habit'} description={'One must have some good daily habits'}/>
     </>
   )
 }
