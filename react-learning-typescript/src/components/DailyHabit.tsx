@@ -20,6 +20,13 @@ export default function DailyHabitWithProps(props: {
     </article>
 }
 
+/*
+DailyHabitWithObjectDestructuring is similar to DailyHabitWithProps except one key difference that it uses object
+destructuring instead of using props directly via dot notation.
+Object destructuring is a feature in JavaScript that allows one to extract values from objects and assign those to variables 
+in a more concise and readable way. Instead of accessing object properties using dot notation, one can use a syntax that 
+looks similar to the object literal syntax.
+ */
 export function DailyHabitWithObjectDestructuring({title, description}: {
     title: string;
     description: string;
