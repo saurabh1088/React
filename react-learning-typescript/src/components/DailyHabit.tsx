@@ -26,6 +26,8 @@ destructuring instead of using props directly via dot notation.
 Object destructuring is a feature in JavaScript that allows one to extract values from objects and assign those to variables 
 in a more concise and readable way. Instead of accessing object properties using dot notation, one can use a syntax that 
 looks similar to the object literal syntax.
+This approach is fine but if there are a bunch of properties then it become complex and syntax also becomes too much to
+handle and understand.
  */
 export function DailyHabitWithObjectDestructuring({
     title, 
@@ -34,6 +36,25 @@ export function DailyHabitWithObjectDestructuring({
     title: string;
     description: string;
 }) {
+    return <article>
+        <div>
+            <h2>{title}</h2>
+            <p>{description}</p>
+        </div>
+    </article>
+}
+
+type DailyHabitType ={
+    title: string;
+    description: string;
+};
+
+/*
+DailyHabitWithCustomTypeDefinition is similar to DailyHabitWithObjectDestructuring except one key difference that it uses
+concept of type and defines the properties as a type which can be used in declaration and also be used elsewhere thereby
+removing the issue with complexity arising due to multiple properties and avoids code repetition.
+ */
+export function DailyHabitWithCustomTypeDefinition({ title, description}: DailyHabitType) {
     return <article>
         <div>
             <h2>{title}</h2>
