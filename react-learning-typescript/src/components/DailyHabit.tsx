@@ -53,6 +53,15 @@ type DailyHabitType ={
 DailyHabitWithCustomTypeDefinition is similar to DailyHabitWithObjectDestructuring except one key difference that it uses
 concept of type and defines the properties as a type which can be used in declaration and also be used elsewhere thereby
 removing the issue with complexity arising due to multiple properties and avoids code repetition.
+
+Here type or interface any one of the way could have worked, for example if DailyHabitType was defined as an interface 
+then also same funtion would have worked without any change.
+
+interface DailyHabitType {
+    title: string;
+    description: string;
+};
+
  */
 export function DailyHabitWithCustomTypeDefinition({ title, description}: DailyHabitType) {
     return <article>
