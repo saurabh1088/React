@@ -27,7 +27,10 @@ Object destructuring is a feature in JavaScript that allows one to extract value
 in a more concise and readable way. Instead of accessing object properties using dot notation, one can use a syntax that 
 looks similar to the object literal syntax.
  */
-export function DailyHabitWithObjectDestructuring({title, description}: {
+export function DailyHabitWithObjectDestructuring({
+    title, 
+    description
+}: {
     title: string;
     description: string;
 }) {
