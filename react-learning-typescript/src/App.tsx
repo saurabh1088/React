@@ -5,6 +5,7 @@ import './App.css'
 import DailyHabitWithProps from './components/DailyHabit'
 import DailyHabitWithObjectDestructuring from './components/DailyHabit'
 import DailyHabitWithCustomTypeDefinition from './components/DailyHabit'
+import HeaderWithImage from './components/HeaderWithImage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +32,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <HeaderWithImage image={ {src: reactLogo, alt: "A logo for header"} }>
+        <h1>Header with image</h1>
+      </HeaderWithImage>
       <DailyHabitWithProps title='1. Daily Habit' description='One must have some good daily habits'/>
       <DailyHabitWithObjectDestructuring title={'2. Daily Habit'} description={'One must have some good daily habits'}/>
       <DailyHabitWithCustomTypeDefinition title={'3. Daily Habit'} description={'One must have some good daily habits'}/>
