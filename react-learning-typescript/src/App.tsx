@@ -6,6 +6,7 @@ import DailyHabitWithProps from './components/DailyHabit'
 import DailyHabitWithObjectDestructuring from './components/DailyHabit'
 import DailyHabitWithCustomTypeDefinition from './components/DailyHabit'
 import HeaderWithImage from './components/HeaderWithImage'
+import ButtonWithState from './components/ButtonWithState'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,7 @@ function App() {
       <DailyHabitWithProps title='1. Daily Habit' description='One must have some good daily habits'/>
       <DailyHabitWithObjectDestructuring title={'2. Daily Habit'} description={'One must have some good daily habits'}/>
       <DailyHabitWithCustomTypeDefinition title={'3. Daily Habit'} description={'One must have some good daily habits'}/>
+      <ButtonWithState/>
     </>
   )
 }
